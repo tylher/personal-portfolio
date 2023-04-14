@@ -1,10 +1,5 @@
 :root {
-  --main-color: linear-gradient(
-    45deg,
-    rgba(0, 219, 222, 1) 0%,
-    rgba(86, 126, 183, 1) 50%,
-    rgba(246, 46, 222, 1) 100%
-  );
+  --main-color: linear-gradient(45deg, #00dbde 0%, #567eb7 50%, #f62ede 100%);
 }
 
 .blog-img {
