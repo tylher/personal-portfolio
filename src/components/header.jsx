@@ -1,19 +1,14 @@
 import React from "react";
-import headshot from "../images/headshot.png";
 import "./header.css";
 import Mysvg from "./mysvg";
+import Navbar from "./navbar";
 const Header = () => {
-  const blobStyle = {
-    width: "300px",
-    height: "280px",
-    overFlow: "hidden",
-  };
   return (
     <>
       <header>
-        <div>Header</div>
+        <Navbar />
 
-        <div style={blobStyle}>
+        <div>
           <Mysvg />
         </div>
       </header>

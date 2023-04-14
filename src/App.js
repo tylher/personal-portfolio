@@ -4,7 +4,6 @@ import Header from './components/header';
 function App() {
   return (
     <div>
-      My Portfolio
       <Header/>
     </div>
   );
