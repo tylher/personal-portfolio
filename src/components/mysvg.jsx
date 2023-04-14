@@ -6,7 +6,7 @@ const Mysvg = () => {
     <div>
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        className="mysvg"
+        className="mysvg lg:w-[450px]"
         viewBox="67.164 212.386 775.741 680.911"
       >
         <defs>
