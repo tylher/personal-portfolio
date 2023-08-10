@@ -5,7 +5,7 @@ import Headline from "./headline";
 const Header = () => {
   return (
     <>
-      <header>
+      <header className="bg-gray-100 h-screen">
         <Navbar />
         <Headline />
       </header>
