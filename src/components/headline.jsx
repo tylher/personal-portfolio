@@ -5,10 +5,10 @@ const Headline = () => {
   return (
     <div className="flex gap-[20px] justify-between px-20 mt-[40px]">
       <div className="w-[50%] text-gray-600 text-lg  font-[500] flex flex-col">
-        <p className="text-4xl flex font-medium gap-3">
+        <h2 className="text-4xl flex font-medium gap-3">
           {" "}
-          Hello, I am <p class="text-[#567eb7] font-bold">Damola</p>
-        </p>
+          Hello, I am <p className="text-[#567eb7] font-bold">Damola</p>
+        </h2>
         <h3 className="text-6xl font-bold text-[#f62ede]">
           Full-stack Web Developer
         </h3>

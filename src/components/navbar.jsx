@@ -7,8 +7,7 @@ const Navbar = () => {
     setActive(value);
   };
   return (
-    <div className="flex justify-between items-center py-2 px-20">
-      <h2 className="logo">DamolaDev</h2>
+    <>
       <ul className="flex w-2/3 justify-center items-center gap-6">
         {names.map((name, id) => {
           return (
@@ -16,11 +15,11 @@ const Navbar = () => {
               key={id}
               className={"text-md text-gray-500 font-semibold "
                 .concat(
-                  active == name
+                  active === name
                     ? " rounded-md px-2 py-1 bg-gradient-to-tr from-[#00dbde] via-[#567eb7] to-[#f62ede] text-white"
                     : ""
                 )
-                .concat(active == name ? "" : "nav-link")}
+                .concat(active === name ? "" : "nav-link")}
               onClick={() => handleClick(name)}
             >
               <a className={"tracking-[0.15em]"} href="#">
@@ -35,17 +34,19 @@ const Navbar = () => {
         <li
           className={"text-md text-gray-500 font-semibold "
             .concat(
-              active == "Contact"
+              active === "Contact"
                 ? " rounded-md px-2 py-1 bg-gradient-to-tr from-[#00dbde] via-[#567eb7] to-[#f62ede] text-white"
                 : ""
             )
-            .concat(active == "Contact" ? "" : "nav-link")}
+            .concat(active === "Contact" ? "" : "nav-link")}
           onClick={() => handleClick("Contact")}
         >
-          <a className="tracking-[0.15em]">Contact</a>
+          <a className="tracking-[0.15em]" href="">
+            Contact
+          </a>
         </li>
       </ul>
-    </div>
+    </>
   );
 };
 
