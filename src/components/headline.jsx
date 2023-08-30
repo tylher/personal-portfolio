@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const Headline = () => {
   return (
-    <div className="flex gap-[20px] justify-between px-20 mt-[40px]">
+    <div className="flex gap-[20px] justify-between px-20 mt-[40px] overflow-hidden">
       <div className="w-[50%] text-gray-600 text-lg  font-[500] flex flex-col">
         <h2 className="text-4xl flex font-bold gap-3">
           {" "}
@@ -14,11 +14,16 @@ const Headline = () => {
         <h3 className="text-6xl font-bold text-[#f62ede]">
           Full-stack Web Developer
         </h3>
-        <p className="text-lg italic my-5 font-semibold">
+        <motion.p
+          className="text-lg italic my-5 font-semibold"
+          initial={{ scale: 0, opacity: 0 }}
+          animate={{ scale: 1, opacity: 1 }}
+          transition={{ type: "spring", duration: 1 }}
+        >
           {" "}
           Crafting and delivering state-of-the-art software solutions to help
           drive innovation through full-stack expertise.
-        </p>
+        </motion.p>
         <div className="flex gap-5">
           <button
             type="button"
