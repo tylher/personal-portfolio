@@ -1,11 +1,13 @@
 import React from "react";
 import Mysvg from "./mysvg";
+import { ExpandCircleDown } from "@mui/icons-material";
+import { motion } from "framer-motion";
 
 const Headline = () => {
   return (
     <div className="flex gap-[20px] justify-between px-20 mt-[40px]">
       <div className="w-[50%] text-gray-600 text-lg  font-[500] flex flex-col">
-        <h2 className="text-4xl flex font-medium gap-3">
+        <h2 className="text-4xl flex font-bold gap-3">
           {" "}
           Hello, I am <p className="text-[#567eb7] font-bold">Damola</p>
         </h2>
@@ -33,9 +35,17 @@ const Headline = () => {
           </button>
         </div>
       </div>
-      <div className=" flex items-center">
+      <div className=" flex items-center relative">
         <Mysvg />
       </div>
+      <motion.div
+        className="absolute left-[50%]"
+        initial={{ bottom: 20 }}
+        animate={{ bottom: 3 }}
+        transition={{ repeat: "Infinity", duration: 0.8 }}
+      >
+        <ExpandCircleDown sx={{ fontSize: 35 }} />
+      </motion.div>
     </div>
   );
 };
